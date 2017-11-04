@@ -1,7 +1,7 @@
 import gym
 import numpy as np
-from dqn.memory import Memory
-from dqn.brain import Brain
+from memory import Memory
+from brain import Brain
 
 
 class DQN(object):
@@ -89,7 +89,7 @@ class DQN(object):
 
 def main():
     env = gym.make("CartPole-v0")
-    dqn = DQN(env, render=False)
+    dqn = DQN(env, render=True)
     dqn.train()
 
 
